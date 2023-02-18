@@ -107,13 +107,13 @@ main article #div__h2_04 {
 main article div p {
     text-align: center;
     color: 	white;
-    letter-spacing: 1px;
-    line-height: 28px;
+    letter-spacing: 2px;
+    line-height: 30px;
     text-shadow: 1px 1px black;
 }
 
-address {
-    margin: 40px auto;
+.address__space {
+    margin: 30px auto;
 }
 
 address .col {
@@ -121,4 +121,29 @@ address .col {
     height: 100px;
     padding: 1%;
     box-sizing: border-box; text-align: center;
+}
+.bi-envelope, .bi-telephone {
+    color: #ffa400; font-size: 32px; font-weight: bold;
+}
+
+footer {
+    background-color: #717171; 
+}
+
+footer p {
+    color: white; text-align: center; font-weight: bold;
+    padding-top: 15px;
+}
+
+footer address {
+    color: white; text-align: center; font-weight: bold;
+    margin: 0px; padding-bottom: 15px;
+}
+
+footer div {
+    width: 50%; margin: 0px auto; text-align: center;
+}
+
+.bi-instagram, .bi-facebook, .bi-twitter {
+    font-size: 24px; color: white;
 }
