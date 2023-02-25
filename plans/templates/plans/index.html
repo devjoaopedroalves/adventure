@@ -1,0 +1,23 @@
+{% include 'global/index.html' %}
+{% load static %}
+<body>
+    {% include 'global/partials/header.html' %}
+    <main class='container'>
+        <div class="row row-cols-2">
+            <div class="col">
+                <img src="{% static 'global/image/icarai.jpg' %}" alt="">
+                {% for plano in planos %}
+                <h3>Titulo: {{ plano.title }}</h3>
+                <p>Descrição: {{ plano.description }}</p>
+                <p>Tipo de Pacote: {{ plano.type_plan }}</p>
+                <hr>
+                <span>Duração de Viagem: {{ plano.duration }}</span>
+                <p>Roteiro: {{ plano.road_map }}</p>
+                <span>Preço: {{ plano.value }}</span>
+                <p></p>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>
